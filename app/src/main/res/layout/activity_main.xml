@@ -26,28 +26,81 @@
 
             <!-- Primary Content -->
             <ImageView
-                android:id="@+id/iv_demo"
+                android:id="@+id/iv_demo_a"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
+                android:layout_marginTop="24dp"
                 tools:background="@color/colorPrimary"
                 app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintVertical_bias="0.4"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/tv_demo"
+                app:layout_constraintBottom_toTopOf="@+id/tv_demo_a"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="ContentDescription"/>
 
             <TextView
-                android:id="@+id/tv_demo"
+                android:id="@+id/tv_demo_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello World!"
-                app:layout_constraintTop_toBottomOf="@+id/iv_demo"
+                android:layout_marginTop="24dp"
+                android:text="Demo A"
+                app:layout_constraintTop_toBottomOf="@+id/iv_demo_a"
+                app:layout_constraintBottom_toTopOf="@+id/iv_demo_b"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/iv_demo_b"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                tools:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/tv_demo_a"
+                app:layout_constraintBottom_toTopOf="@+id/tv_demo_b"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/tv_demo_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="Demo B"
+                app:layout_constraintTop_toBottomOf="@+id/iv_demo_b"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_demo_c"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_marginTop="24dp"-->
+                <!--tools:background="@color/colorPrimary"-->
+                <!---->
+                <!--app:layout_constraintTop_toBottomOf="@+id/tv_demo_b"-->
+                <!--app:layout_constraintBottom_toTopOf="@+id/tv_demo_c"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--tools:ignore="ContentDescription"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_demo_c"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="24dp"-->
+                <!--android:layout_marginBottom="24dp"-->
+                <!--android:text="Demo C"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/iv_demo_c"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--/>-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
